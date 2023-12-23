@@ -152,7 +152,7 @@ After performing 5-fold cross-validation, the accuracy rate has changed.
 
 ### 8.2 KNN parameters error rate
 
-<img src='./image/KNN_error_rate.jpg' width='500'>
+<img src='./image/KNN_error_rate.png' width='500'>
 
 It shows that k values are bigger, Error Rate bigger.
 
