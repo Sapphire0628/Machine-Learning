@@ -39,4 +39,20 @@ In the dataset, due payment days can be observed. Assume that a person is consid
 | C  | Paid off that month  |
 | X  | No loan for the month  |
 
+The target is determined by below logic:
+
 <img src='./image/TargetDefinition.png' width='500'>
+
+### Data Cleaning
+
+#### Remove duplicate
+> After duplicate removal by using Pandas, the data left 32713 rows.
+#### Filter unwanted outliers
+> Handling ouliter using 99.7 rule(Make sure don't remove many information)
+#### Handle missing value
+> One variable has 14% missing values, which is the categorical feature. The solution is to ignore missing values.
+
+### Data Wrangling
+> One-hot encoding is utilized to transform categorical data into separate columns in the dataset.
+> Train-test splitting is applied at a ratio of 7:3 to prevent overfitting.
+> SMOTE (Synthetic Minority Over-sampling Technique) is employed to address imbalanced data. It's important to note that oversampling is performed after the train-test split to avoid the possibility of observations from the minority class in the training dataset appearing in the testing dataset. This ensures that the algorithm does not learn from similar instances and prevents any potential bias or cheating.
