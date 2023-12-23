@@ -1,4 +1,4 @@
-![image](https://github.com/Sapphire0628/Machine-Learning-Project/assets/70888762/56f9a7ea-7e96-4e9c-a930-cddbbb864332)# Credit Card Approval Prediction
+# Credit Card Approval Prediction
 
 ## 1. Introduction:
 
@@ -78,16 +78,60 @@ The target is determined by below logic:
 > The figure showed that some people have around 1000 YEARS_EMPLOYED. After checking, we found that they are both pensioners. Assume that most people around 40-45 YEARS_EMPLOYED are going to become pensioners. ➔ Solution: transform 1000 to [40,45] uniform randomly.
 
 ### 3.3 The distribution of MONTHS_HOLD
-
+<img src='./image/month_holds.jpg' width='500'>
 > MONTHS_HOLD should not be a predictor since it refers to the month the user holds the credit card. It may lead to overfitting. This column also needs to be dropped.
 
 ## 4. Analysis importance features
 
 Information value (IV) is measured in the powers among the predictors, which
 determine the important variables in the predictive model. It ranks variables based on their importance. 
-### 4.1 Rules eelated to Information Value
-### 4.2  Iv value of features
 
+### 4.1 Rules Related to Information Value
+| Information  | Value |
+| ------------- | ------------- |
+| <0.02  | Useless  |
+| 0.02 - 0.1  | Weak  |
+| 0.1 - 0.3 | Medium  |
+| 0.3 - 0.5  | Strong  |
+| >0.5  | Good  |
+
+### 4.2  Iv value of features
+<img src='./image/IV_value.jpg' width='500'>
+
+The figure showed that AGE and YEARS_EMPLOYED are the top 2 important features.
+
+## 5. PCA
+
+Unsupervised learning is applied to test does PCA fits the data well.
+
+### 5.1 PCA result
+<img src='./image/PCA.jpg' width='500'>
+
+Supervised machine learning is preferred over unsupervised learning for the dataset, as it contains a specific set of predictors and lacks clear classification boundaries or distinct clusters.
+
+## 6. Selection of Supervised model 
+
+### 6.1 Logistic Regression
+> Logistic Regression is chosen for its interpretability and efficiency
+
+### 6.2 KNN
+> KNN for its simplicity and ability to capture complex patterns
+
+### 6.3 XGBoost
+> XGBoost for its high performance and flexibility in handling diverse data types
+
+These models provide a range of options to suit different datasets and classification requirements.
+
+## 7. Result
+
+### 7.1 Logistic Regression
+> Information Value is designed mainly for the binary logistic regression models. Features’ IV value < 0.01 is decided to be removed.
+
+### 7.2 KNN
+> KNN for its simplicity and ability to capture complex patterns
+
+### 7.3 XGBoost
+> XGBoost for its high performance and flexibility in handling diverse data types
 
 
 
