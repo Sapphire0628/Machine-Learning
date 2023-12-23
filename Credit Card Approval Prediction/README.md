@@ -4,6 +4,12 @@
 
 Credit cards are widely used for payments, but the manual processing of credit card applications is prone to errors and inefficiencies. To improve productivity and efficiency, machine learning-based credit card approval predictions have become valuable. With advancements in technology and the era of big data, machine learning plays a significant role in predictive analysis. Financial institutions and banks face the challenge of assessing risk factors when providing credit to customers. Machine learning tools can be used to identify low-risk customers and minimize the risk of credit defaults. In this study, we utilize individual information and applicant data to predict the likelihood of future credit card defaults. We conduct exploratory data analysis, compare supervised machine learning algorithms, extract key features for identifying "bad" clients, and select the best-performing algorithm for credit card approval predictions. The chosen algorithm achieves approximately 90% accuracy in prediction. This project highlights the use of machine learning in detecting credit risk and presents findings on customer credit risk assessment.
 
+### Dataset
+The data was collected from the Kaggle Platform1. Figure 1 showed the credit card
+application records and it contains around 430,000 rows & 18 features. Figure 2 show
+monthly credit card account status respectively and it contains around 1,000,000 rows
+& 3 features. 
+
 ### Challenge
 
 In this project, there are the following challenges:
@@ -29,7 +35,6 @@ In the dataset, due payment days can be observed. Assume that a person is consid
 | 2  | 60-89 days overdue  |
 | 3  | 90-119 days overdue  |
 | 4  | 120-149 days overdue  |
-| 5  | Overdue or bad debts, write-offs for more than
-150 days  |
+| 5  | Overdue or bad debts, write-offs for more than 150 days  |
 | C  | Paid off that month  |
-| X  | No loan for the mont  |
+| X  | No loan for the month  |
