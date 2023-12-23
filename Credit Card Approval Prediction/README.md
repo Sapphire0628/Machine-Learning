@@ -53,6 +53,10 @@ The target is determined by below logic:
 > One variable has 14% missing values, which is the categorical feature. The solution is to ignore missing values.
 
 ### Data Wrangling
+
+#### One-hot encoding
 > One-hot encoding is utilized to transform categorical data into separate columns in the dataset.
+#### Train-test splitting
 > Train-test splitting is applied at a ratio of 7:3 to prevent overfitting.
-> SMOTE (Synthetic Minority Over-sampling Technique) is employed to address imbalanced data. It's important to note that oversampling is performed after the train-test split to avoid the possibility of observations from the minority class in the training dataset appearing in the testing dataset. This ensures that the algorithm does not learn from similar instances and prevents any potential bias or cheating.
+#### Oversampling
+> SMOTE is employed to address imbalanced data. It's important to note that oversampling is performed after the train-test split to avoid the possibility of observations from the minority class in the training dataset appearing in the testing dataset. This ensures that the algorithm does not learn from similar instances and prevents any potential bias or cheating.
