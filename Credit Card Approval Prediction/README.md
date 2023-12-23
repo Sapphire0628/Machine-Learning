@@ -186,3 +186,9 @@ The performance of the simple train-test spilt is the poorest. The performance o
 
 In conclusion, AGE and YEAR_EMPLOYED are the important features in the predictors, which means they can easily interpret the credit card approval result. On the other hand, XGBoost has the highest performance with 90-95% accuracy. Therefore, XGBoost should be applied to the business situation to optimize the prediction result.
 
+
+## Reference
+1.	Credit card approval prediction. Kaggle. (n.d.). Retrieved November 22, 2021, from https://www.kaggle.com/rikdifos/credit-card-approval-prediction/metadata 
+2.	Bhalla, D. (n.d.). Weight of evidence (WOE) and information value (iv) explained. ListenData. Retrieved November 22, 2021, from https://www.listendata.com/2015/03/weight- of-evidence-woe-and-information.html 
+3.	Santos, M. S., Soares, J. P., Abreu, P. H., Araujo, H., &amp; Santos, J. (2018). Cross- validation for imbalanced datasets: Avoiding overoptimistic and overfitting approaches. IEEE Computational Intelligence Magazine, 13(4), 59–76. https://doi.org/10.1109/mci.2018.2866730 
+
