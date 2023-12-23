@@ -69,17 +69,19 @@ The target is determined by below logic:
 
 ### 3.1 The distribution of different variables
 <img src='./image/distribution.png' width='500'>
-> The figure shows that FLAG_MOBIL is useless data since the data records that all people have mobile phones. This column needs to be dropped.
 
-> If a person is at work, the probability of being a good client will be higher than the unemployed person.
+- The figure shows that FLAG_MOBIL is useless data since the data records that all people have mobile phones. This column needs to be dropped.
+- If a person is at work, the probability of being a good client will be higher than the unemployed person.
 
 ### 3.2 The distribution of YEARS_EMPLOYED
 <img src='./image/year_employed.png' width='500'>
-> The figure showed that some people have around 1000 YEARS_EMPLOYED. After checking, we found that they are both pensioners. Assume that most people around 40-45 YEARS_EMPLOYED are going to become pensioners. ➔ Solution: transform 1000 to [40,45] uniform randomly.
+
+- The figure showed that some people have around 1000 YEARS_EMPLOYED. After checking, we found that they are both pensioners. Assume that most people around 40-45 YEARS_EMPLOYED are going to become pensioners. ➔ Solution: transform 1000 to [40,45] uniform randomly.
 
 ### 3.3 The distribution of MONTHS_HOLD
 <img src='./image/month_holds.jpg' width='500'>
-> MONTHS_HOLD should not be a predictor since it refers to the month the user holds the credit card. It may lead to overfitting. This column also needs to be dropped.
+
+- MONTHS_HOLD should not be a predictor since it refers to the month the user holds the credit card. It may lead to overfitting. This column also needs to be dropped.
 
 ## 4. Analysis importance features
 
@@ -112,26 +114,75 @@ Supervised machine learning is preferred over unsupervised learning for the data
 ## 6. Selection of Supervised model 
 
 ### 6.1 Logistic Regression
-> Logistic Regression is chosen for its interpretability and efficiency
+> Logistic Regression is chosen for its interpretability and efficiency. Information Value is designed mainly for the binary logistic regression models. Features’ IV value < 0.01 is decided to be removed.
 
 ### 6.2 KNN
-> KNN for its simplicity and ability to capture complex patterns
+> KNN for its simplicity and ability to capture complex patterns. Feature selection via IV value and using them in KNN and XGBoost model might not produce the most accuracy. IV value should not be used in KNN and XGBoost models.
 
 ### 6.3 XGBoost
-> XGBoost for its high performance and flexibility in handling diverse data types
+> XGBoost for its high performance and flexibility in handling diverse data types. It is currently the most common algorithm in Kaggle competitions, and it is also the model used by most winners. 
 
 These models provide a range of options to suit different datasets and classification requirements.
 
-## 7. Result
+## 7. Training Result
 
 ### 7.1 Logistic Regression
-> Information Value is designed mainly for the binary logistic regression models. Features’ IV value < 0.01 is decided to be removed.
+
+<img src='./image/LR.jpg' width='500'>
 
 ### 7.2 KNN
-> KNN for its simplicity and ability to capture complex patterns
+
+<img src='./image/KNN.jpg' width='500'>
 
 ### 7.3 XGBoost
-> XGBoost for its high performance and flexibility in handling diverse data types
 
+<img src='./image/XGBoost.jpg' width='500'>
 
+## 8. Evaluation
+
+### 8.1 5-fold cross-validation
+
+After performing 5-fold cross-validation, the accuracy rate has changed.
+
+| Algorithm  | Value change |
+| ------------- | ------------- |
+| Logistic Regression  | 60% --> 58%  |
+| KNN | 70% --> 94%  |
+| XGBoost | 90% --> 94%  |
+
+### 8.2 KNN parameters error rate
+
+<img src='./image/KNN_error_rate.jpg' width='500'>
+
+It shows that k values are bigger, Error Rate bigger.
+
+### 8.3 5-fold cross-validation with SMOTE
+
+Using SMOTE to avoid inaccurate evaluation metrics when using 5-fold cross-validation. After performing a 5-fold cross-validation with SMOTE, the accuracy rate has changed.
+
+| Algorithm  | Value change |
+| ------------- | ------------- |
+| Logistic Regression  | 60% --> 58%  |
+| KNN | 70% --> 89%  |
+| XGBoost | 90% --> 93%  |
+
+### 8.4 Comparing accuracy
+
+The performance of the simple train-test spilt is the poorest. The performance of the KNN and XGBoost models via 5-fold cross-validation with SMOTE is slightly decreased compared to the models via 5-fold cross-validation.
+
+| Accuracy  | Simple train-test spilt | 5-fold | 5-fold with SMOTE |
+| ------------- | ------------- | ------------- | ------------- |
+| Logistic Regression  | 60% | 58% | 58% |
+| KNN | 70% | 94% | 89% | 
+| XGBoost | 90% | 94% | 93% |
+
+## 9. Discussion
+
+### Further discussion on cross-validation for imbalanced datasets 
+
+5-fold cross-validation (performing oversampling before executing cross-validation) and 5-fold cross-validation with SMOTE (performing oversampling during cross-validation) are both adopted for model validation in this paper. We found that performing oversampling before executing cross-validation seems "efficient". However, the fact is that we are overestimating the classification performance while adopting this method. Therefore, performing oversampling during cross-validation is the correct way of handling imbalanced data. 
+
+## Conclusion
+
+In conclusion, AGE and YEAR_EMPLOYED are the important features in the predictors, which means they can easily interpret the credit card approval result. On the other hand, XGBoost has the highest performance with 90-95% accuracy. Therefore, XGBoost should be applied to the business situation to optimize the prediction result.
 
