@@ -38,3 +38,5 @@ In the dataset, due payment days can be observed. Assume that a person is consid
 | 5  | Overdue or bad debts, write-offs for more than 150 days  |
 | C  | Paid off that month  |
 | X  | No loan for the month  |
+
+<img src='./image/TargetDefinition.png' width='500'>
