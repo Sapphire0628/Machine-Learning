@@ -1,4 +1,4 @@
-# Credit Card Approval Prediction
+![image](https://github.com/Sapphire0628/Machine-Learning-Project/assets/70888762/56f9a7ea-7e96-4e9c-a930-cddbbb864332)# Credit Card Approval Prediction
 
 ## 1. Introduction:
 
@@ -28,6 +28,8 @@ Our achievement in this project is to:
 
 In the dataset, due payment days can be observed. Assume that a person is considered **a ‘Bad’ client if he has unpaid payments for more than 60 days**. Status is defined by:
 
+#### The definition of Status variable
+
 | Status  | Meaning |
 | ------------- | ------------- |
 | 0  | 1-29 days past due  |
@@ -56,10 +58,36 @@ The target is determined by below logic:
 
 #### 2.3.1 One-hot encoding
 > One-hot encoding is utilized to transform categorical data into separate columns in the dataset.
+
 #### 2.3.2 Train-test splitting
 > Train-test splitting is applied at a ratio of 7:3 to prevent overfitting.
+
 #### 2.3.3 Oversampling
 > SMOTE is employed to address imbalanced data. It's important to note that oversampling is performed after the train-test split to avoid the possibility of observations from the minority class in the training dataset appearing in the testing dataset. This ensures that the algorithm does not learn from similar instances and prevents any potential bias or cheating.
 
-## Exploratory data analysis (EDA)
+## 3. Exploratory data analysis (EDA)
+
+### 3.1 The distribution of different variables
+<img src='./image/distribution.png' width='500'>
+> The figure shows that FLAG_MOBIL is useless data since the data records that all people have mobile phones. This column needs to be dropped.
+
+> If a person is at work, the probability of being a good client will be higher than the unemployed person.
+
+### 3.2 The distribution of YEARS_EMPLOYED
+<img src='./image/year_employed.png' width='500'>
+> The figure showed that some people have around 1000 YEARS_EMPLOYED. After checking, we found that they are both pensioners. Assume that most people around 40-45 YEARS_EMPLOYED are going to become pensioners. ➔ Solution: transform 1000 to [40,45] uniform randomly.
+
+### 3.3 The distribution of MONTHS_HOLD
+
+> MONTHS_HOLD should not be a predictor since it refers to the month the user holds the credit card. It may lead to overfitting. This column also needs to be dropped.
+
+## 4. Analysis importance features
+
+Information value (IV) is measured in the powers among the predictors, which
+determine the important variables in the predictive model. It ranks variables based on their importance. 
+### 4.1 Rules eelated to Information Value
+### 4.2  Iv value of features
+
+
+
 
