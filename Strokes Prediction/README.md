@@ -44,7 +44,7 @@ Classification models were selected and evaluated to predict strokes. The follow
 | Decision Tree       | 0.788           | 0.79        | 0.88   | 0.67         | 0.76        | 
 
 
-Based on the evaluation, the decision tree model outperformed the others by minimizing overfitting on the sample data.
+> Based on the evaluation, the decision tree model outperformed the others by minimizing overfitting on the sample data.
 
 ## Results Interpretation, Discussion & Conclusion
 The analysis revealed that over 81.1% of stroke patients are overweight, indicating a strong positive correlation between high BMI and stroke. The decision tree model was identified as the best classification model due to its higher performance.
