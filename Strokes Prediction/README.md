@@ -10,17 +10,17 @@ The objective of this project is to analyze and predict strokes based on various
 ## Data Visualization
 <img src='./Figure/corr.png' width='800'>
 
-The following factors have been identified as being associated with strokes:
+> The following factors have been identified as being associated with strokes:
 
-- Age
-- Marital status
-- Heart disease
-- Average glucose level
-- Hypertension
+> - Age
+> - Marital status
+> - Heart disease
+> - Average glucose level
+> - Hypertension
 
 <img src='./Figure/relationship.png' width='800'>
 
-From the analysis, it was observed that individuals aged over 60 and those with blood glucose levels higher than 150 are more prone to strokes. The feature of marital status was found to be irrelevant in stroke prediction, as it increases with age.
+> From the analysis, it was observed that individuals aged over 60 and those with blood glucose levels higher than 150 are more prone to strokes. The feature of marital status was found to be irrelevant in stroke prediction, as it increases with age.
 
 ## Data Preprocessing
 
