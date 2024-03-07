@@ -1,4 +1,4 @@
-#Steel Plates Faults Detection
+# Steel Plates Faults Detection
 
 ## Introduction
 The prediction of steel plate faults can help prevent accidents that could harm humans. As the response variable is binary, our goal is to train several classification models to classify the type of fault in steel plates. We will compare the performance of different models to identify the best model for predicting faults.
@@ -8,6 +8,7 @@ This dataset comes from research conducted by Semeion, Research Center of Scienc
 
 ## Data Analysis and Visualization
 
+<img src='./Figure/Visualization.png' width='800'>
 
 ## Data Preprocessing
 Separate the variables into Features (X) as input and Faults (y) as the output.
