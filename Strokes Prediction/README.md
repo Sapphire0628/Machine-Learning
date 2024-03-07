@@ -8,15 +8,17 @@ Stroke is a medical emergency that is a leading cause of death globally. In 2019
 The objective of this project is to analyze and predict strokes based on various factors.
 
 ## Data Visualization
-
+<img src='./Figure/corr.png' width='800'>
 
 The following factors have been identified as being associated with strokes:
 
-Age
-Marital status
-Heart disease
-Average glucose level
-Hypertension
+- Age
+- Marital status
+- Heart disease
+- Average glucose level
+- Hypertension
+
+<img src='./Figure/relationship.png' width='800'>
 
 From the analysis, it was observed that individuals aged over 60 and those with blood glucose levels higher than 150 are more prone to strokes. The feature of marital status was found to be irrelevant in stroke prediction, as it increases with age.
 
@@ -24,11 +26,11 @@ From the analysis, it was observed that individuals aged over 60 and those with 
 
 Data preprocessing techniques were applied to ensure the quality and suitability of the data for analysis. The following steps were performed:
 
-Handling missing data: Incomplete data entries in the dataset were addressed.
-Feature encoding: Categorical values of relevant features were converted into numerical values.
-Splitting dataset: The dataset was split to detect underfitting or overfitting of the model.
-Feature normalization: Feature normalization was performed to enable faster convergence in machine learning.
-Upsampling data: Imbalanced datasets were addressed by upsampling the minority class to avoid poor performance.
+1. Handling missing data: Incomplete data entries in the dataset were addressed.
+2. Feature encoding: Categorical values of relevant features were converted into numerical values.
+3. Splitting dataset: The dataset was split to detect underfitting or overfitting of the model.
+4. Feature normalization: Feature normalization was performed to enable faster convergence in machine learning.
+5. Upsampling data: Imbalanced datasets were addressed by upsampling the minority class to avoid poor performance.
 
 
 ## Data Modeling
@@ -58,9 +60,9 @@ The analysis revealed that over 81.1% of stroke patients are overweight, indicat
 ## Insights
 To prevent blood sugar spikes, overweight, and stroke, the following recommendations are suggested:
 
-Eat fewer carbohydrates, especially refined carbs (e.g., rice).
-Reduce sugar intake.
-Increase exercise.
-Consume more fiber-rich foods like vegetables, fruits, and oats.
-Stay hydrated by drinking more water.
-Quit smoking and avoid alcohol consumption.
+- Eat fewer carbohydrates, especially refined carbs (e.g., rice).
+- Reduce sugar intake.
+- Increase exercise.
+- Consume more fiber-rich foods like vegetables, fruits, and oats.
+- Stay hydrated by drinking more water.
+- Quit smoking and avoid alcohol consumption.
