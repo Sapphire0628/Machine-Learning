@@ -7,7 +7,7 @@ Credit cards are widely used for payments, but manually processing credit card a
 ## Steel Plates Faults Detection
 
 ## Strokes Prediction
-This project analyzes and predicts strokes using various factors such as age, marital status, heart disease, average glucose level, and hypertension. The data is preprocessed to ensure quality, and classification models are evaluated. The decision tree model shows superior performance in predicting strokes. The study highlights the correlation between stroke and factors like age and BMI. Recommendations are provided for stroke prevention, including dietary changes and lifestyle modifications. This project contributes to understanding stroke risk and promoting healthier lifestyles. [links](https://github.com/Sapphire0628/Machine-Learning-Project/blob/main/README.md)
+This project analyzes and predicts strokes using various factors such as age, marital status, heart disease, average glucose level, and hypertension. The data is preprocessed to ensure quality, and classification models are evaluated. The decision tree model shows superior performance in predicting strokes. The study highlights the correlation between stroke and factors like age and BMI. Recommendations are provided for stroke prevention, including dietary changes and lifestyle modifications. This project contributes to understanding stroke risk and promoting healthier lifestyles. [links](https://github.com/Sapphire0628/Machine-Learning-Project/blob/main/Strokes%20Prediction/README.md)
 
 
 Keywords: Stroke, Predictive Modeling, Decision Tree, Risk Factors, Prevention.
