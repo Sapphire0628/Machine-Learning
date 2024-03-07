@@ -37,6 +37,10 @@ Data preprocessing techniques were applied to ensure the quality and suitability
 
 Classification models were selected and evaluated to predict strokes. The following models were used:
 
+
+| Classification models | Accuracy Score | ROC AUC Score | Precision | Recall | F1 | Drop out rate | Best validation accuracy | AUC      |
+|-------------------|------------------|---------------|-------|-----------|--------------|---------------|-------------------------|----------|
+| InceptionV3       | Binary           | 0.0001        | 0.5   | 5         | 1e-4         | 0.3           | 96.3786                 | 96.34086 |
 Logistic Regression:
 
 Accuracy Score: 0.799
