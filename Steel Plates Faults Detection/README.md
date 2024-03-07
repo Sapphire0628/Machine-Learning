@@ -74,7 +74,10 @@ To evaluate the impact of dimensionality reduction, we implemented all the class
 ## Results - Comparison
 The fault diagnosis performance of the models was evaluated using statistical accuracy.
 
-
+| Comparison Results | KNN | Logistic Regression | Random Forest | XGBoost |
+|-------------------|------------------|---------------|-------|-----------|
+| Simple Accuracy | 0.731           | 0.683        | 0.76   | 0.755      | 
+| PCA Accuracy      | 0.731           | 0.683        | 0.767   | 0.738         | 
 
 Model without PCA:
 
