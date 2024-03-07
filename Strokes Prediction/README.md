@@ -9,6 +9,11 @@ Stroke is a medical emergency that is a leading cause of death globally. In 2019
 ## Objective
 The objective of this project is to analyze and predict strokes based on various factors.
 
+## Dataset
+
+The dataset contains attributes such as gender, age, hypertension, heart disease, marital status, work type, residence type, average glucose level, BMI, smoking status, and stroke occurrence. These attributes provide information about the patients' health and demographic factors. The dataset also includes a unique identifier for each instance and accounts for cases where smoking status information is unavailable.
+
+
 ## Data Visualization
 <img src='./Figure/corr.png' width='800'>
 
