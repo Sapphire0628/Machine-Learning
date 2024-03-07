@@ -38,23 +38,11 @@ Data preprocessing techniques were applied to ensure the quality and suitability
 Classification models were selected and evaluated to predict strokes. The following models were used:
 
 
-| Classification models | Accuracy Score | ROC AUC Score | Precision | Recall | F1 | Drop out rate | Best validation accuracy | AUC      |
-|-------------------|------------------|---------------|-------|-----------|--------------|---------------|-------------------------|----------|
-| InceptionV3       | Binary           | 0.0001        | 0.5   | 5         | 1e-4         | 0.3           | 96.3786                 | 96.34086 |
-Logistic Regression:
+| Classification models | Accuracy Score | ROC AUC Score | Precision | Recall | F1 |
+|-------------------|------------------|---------------|-------|-----------|--------------|
+| Logistic Regression | 0.799           | 0.80        | 0.77   | 0.86      | 0.81        | 
+| Decision Tree       | 0.788           | 0.79        | 0.88   | 0.67         | 0.76        | 
 
-Accuracy Score: 0.799
-ROC AUC Score: 0.80
-Precision: 0.77
-Recall: 0.86
-F1: 0.81
-Decision Tree:
-
-Accuracy Score: 0.788
-ROC AUC Score: 0.79
-Precision: 0.88
-Recall: 0.67
-F1: 0.76
 
 Based on the evaluation, the decision tree model outperformed the others by minimizing overfitting on the sample data.
 
