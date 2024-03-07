@@ -30,9 +30,10 @@ This dataset comes from research conducted by Semeion, Research Center of Scienc
 
 The justification for selecting classification models over regression models is based on two factors:
 
-1. The dataset consists of multiple categories, indicating that the problem is a classification task rather than a regression task. Classification models are specifically designed to handle categorical or discrete target variables. 2. The dataset includes labels, which means we have labeled instances indicating the type of fault. This further confirms that the problem is a classification task.
+1. The dataset consists of multiple categories, indicating that the problem is a classification task rather than a regression task. Classification models are specifically designed to handle categorical or discrete target variables.
+2. The dataset includes labels, which means we have labeled instances indicating the type of fault. This further confirms that the problem is a classification task.
    
-> Given these factors, we believe that using regression models instead of classification models would lead to lower accuracy in predicting the type of faults in steel plates.
+Given these factors, we believe that using regression models instead of classification models would lead to lower accuracy in predicting the type of faults in steel plates.
 
 ### Methods
 
@@ -54,7 +55,7 @@ In this study, we employed four classification methods to predict the type of fa
 
 4. XGBoost
 
-> - XGBoost is an optimized gradient boosting algorithm that builds an ensemble of weak classification models.
+> - XGBoost is an optimized gradient-boosting algorithm that builds an ensemble of weak classification models.
 
 ### Principal Component Analysis (PCA)
 
