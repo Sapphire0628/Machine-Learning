@@ -1,5 +1,7 @@
 # Stroke Analysis and Prediction
 
+## Source Code
+[links](https://github.com/Sapphire0628/Machine-Learning-Project/blob/main/Strokes%20Prediction/SourceCode.ipynb)
 
 ## Introduction
 Stroke is a medical emergency that is a leading cause of death globally. In 2019, it was the second leading cause of death, resulting in someone dying every 3.5 minutes. Stroke can lead to various complications, including difficulty talking or swallowing, memory loss, thinking difficulties, and loss of muscle movement.
