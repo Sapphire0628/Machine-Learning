@@ -47,8 +47,8 @@ Classification models were selected and evaluated to predict strokes. The follow
 
 | Classification models | Accuracy Score | ROC AUC Score | Precision | Recall | F1 |
 |-------------------|------------------|---------------|-------|-----------|--------------|
-| Logistic Regression | 0.799           | 0.80        | 0.77   | 0.86      | 0.81        | 
-| Decision Tree       | 0.788           | 0.79        | 0.88   | 0.67         | 0.76        | 
+| Logistic Regression | 0.768           | 0.77        | 0.75   | 0.80      | 0.78        | 
+| Decision Tree       | 0.85           | 0.85        | 0.93   | 0.75         | 0.83        | 
 
 
 > Based on the evaluation, the decision tree model outperformed the others by minimizing overfitting on the sample data.
