@@ -1,6 +1,11 @@
 # Machine Learning Project
 
 This repository stores multiple machine learning projects
+## Stanford RNA 3D Folding
+
+This project aims to predict RNA 3D structures using machine learning techniques. RNA's 3D structure is crucial for understanding its biological functions, but laboratory methods are time-consuming. We participated in the Stanford RNA 3D Folding competition, developing an integrated model that combines machine learning, statistical methods, and geometric analysis to predict RNA 3D coordinates from nucleotide sequences.[links](URL)
+
+Keywords: RNA folding, Deep Learning, Structural Biology, Bioinformatics
 
 ## Credit Card Approval Prediction
 
